@@ -6,14 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donut Clicker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <header>
+    <h1>Fred The Baker Baking Company</h1>
+  </header>
+  <p>
+    <h2><strong>The Cookie Clicker game was created in 2013, by French programmer Julien "Orteil" Thiennot.
+        the user clicks on the a big cookie earning a single cookie per click. Users can spend
+        their earned cookies on game assets.</strong></h2>
+  </p>
+  <p><strong>Contact information: Rochelle Dishmon (Shellejd.github.io)</strong></p>
+
+
   <div class="container">
-    <p id="DonutCount">0</p>
-    <button id="AddDonut">Add Donut</button>
+    <main>
+      <section>
+        <p>Donut Counter: <span id="donutCount">0</span></p>
+        <img src="dist\donut.jpg" alt="This is a picture of donut" class="sectionImg">
+        <nav><button id="addDonutBtn">Add a Donut</button></nav>
+      </section>
+
+      <div>
+        <p>Auto Clicker Cost: <span id="autoClickersCost">100</span></p>
+        <p>Auto Clickers: <span id="autoClickers">0</span></p>
+        <p>
+          <nav><button id="addAutoClickerBtn">Auto Clickers</button></nav>
+        </p>
+      </div>
+
+      <div>
+        <p>Multiplier Cost: <span id="multiplierCost">10</span></p>
+        <p> Multipliers: <span id="multiplier">0</span></p>
+        <nav><button id="addMultiplierBtn">Donut Multiplier </button></nav>
+      </div>
+
+      <script src="./index.js"></script>
+    </main>
   </div>
-  <script src="./index.js"></script>
 </body>
 
 </html>
