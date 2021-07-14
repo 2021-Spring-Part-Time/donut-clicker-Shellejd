@@ -1,31 +1,31 @@
-import DonutMaker from "./DonutMaker";
+import DonutMaker from "./DonutMaker.js";
 
-let sprinkleDonutMaker = new DonutMaker(0, 0, 100, 0, 10);
+const sprinkleDonutMaker = new DonutMaker(0, 0, 100, 0, 10);
 
 console.log(sprinkleDonutMaker);
 
+//check this section
 let addDonutBtn = (document.getElementById('addDonutBtn'));
-let addMultiplierBtn = (document.getElementById('addMultiplierBtn'));
-addMultiplierBtn.addEventListener('click', () => {
+addDonutBtn.addEventListener('click', () => {
   sprinkleDonutMaker.addDonut();
   console.log(sprinkleDonutMaker.numDonuts);
   document.getElementById('donutCount').innerHTML = sprinkleDonutMaker.numDonuts;
+  document.getElementById('multiplier').innerHTML = sprinkleDonutMaker.numMultipliers;
+  document.getElementById('multiplierCost').innerHTML = sprinkleDonutMaker.multiplierCost;
 });
 
+let addMultiplierBtn = (document.getElementById('addMultiplierBtn'));
 addMultiplierBtn.addEventListener('click', () => {
-  conseloe.log(sprinkleDonutMaker.numMultipliers);
-  sprinkleDonutMaker.addMultipliers();
-
+  sprinkleDonutMaker.addMultiplier();
+  console.log(sprinkleDonutMaker.numMultipliers);
   document.getElementById('donutCount').innerHTML = sprinkleDonutMaker.numDonuts;
   document.getElementById('multiplier').innerHTML = sprinkleDonutMaker.numMultipliers;
   document.getElementById('multiplierCost').innerHTML = sprinkleDonutMaker.multiplierCost;
-  console.log(sprinkleDonutMaker.numMultipliers);
 });
 
 let addAutoClickerBtn = (document.getElementById('addAutoClickerBtn'));
 addAutoClickerBtn.addEventListener('click', () => {
   sprinkleDonutMaker.addAutoClicker();
-  sprinkleDonutMaker.activateAutoClickers();
   console.log(sprinkleDonutMaker.numAutoClickers);
   document.getElementById('autoClickersCost').innerHTML = sprinkleDonutMaker.autoClickersCost;
   document.getElementById('autoClickers').innerHTML = sprinkleDonutMaker.numAutoClickers;
@@ -36,8 +36,5 @@ addAutoClickerBtn.addEventListener('click', () => {
 
 setInterval(function () {
   sprinkleDonutMaker.activateAutoClickers();
-  document.getElementById('donutsCount').innerHTML = sprinkleDonutMaker.numDonuts;
+  document.getElementById('donutCount').innerHTML = sprinkleDonutMaker.numDonuts;
 }, 1000);
-
-
-//});

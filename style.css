@@ -1,14 +1,9 @@
-containter {
-    background-color: rgba(221, 221, 221, 0.246);
-    font-size: 16px;
-
-}
-
 header {
-    background-color: rgb(50, 212, 104);
+    background-color: rgb(50, 88, 212);
     text-align: center;
     justify-content: space-between;
     padding: 20px;
+    color: white;
 
 }
 
@@ -40,15 +35,15 @@ nav button:hover {
 }
 
 main {
-    main {
-        background-color: blue;
-        display: grid;
-        /*grid-column: repeat(3, 1fr); same as 1fr 1fr 1fr;*/
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
 
-        gap: 10px;
-        padding: 25px;
-        text-align: center;
+    background-color: rgb(157, 255, 0);
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    /* same as 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 25px;
+    text-align: center;
 
-    }
+}

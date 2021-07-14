@@ -12,41 +12,64 @@
 <body>
 
   <header>
-    <h1>Fred The Baker Baking Company</h1>
+    <h1>DONUT CLICKER GAME</h1>
+    <button><a href="#company">Fred The Baker Baking Company</a></button>
+    <button><a href="#gameInspiration">Game Inspiration</a></button>
+    <button><a href="#contactInfo">Contact Information</a></button>
   </header>
-  <p>
-    <h2><strong>The Cookie Clicker game was created in 2013, by French programmer Julien "Orteil" Thiennot.
+
+
+  <main>
+
+    <section id="company">
+      <h2>Fred The Baker Baking Company</h2>
+      <p>The Donut Clicker is a project created by the instructors at We Can Code IT as a challenge project for
+        students enrolled in the part time Spring Flex Boot Camp. \n The project is expected to get added to the
+        students
+        github repository.
+      </p>
+    </section>
+
+    <section id="gameInspiration">
+      <h2>Game Inspiration</h2>
+      <p>The Cookie Clicker game was created in 2013, by French programmer Julien "Orteil" Thiennot.
         the user clicks on the a big cookie earning a single cookie per click. Users can spend
-        their earned cookies on game assets.</strong></h2>
-  </p>
-  <p><strong>Contact information: Rochelle Dishmon (Shellejd.github.io)</strong></p>
+        their earned cookies on game assets.</p>
+    </section>
+
+    <section id="contactInfo">
+      <h2>Contact Information</h2>
+      <p>Developer: Rochelle Dishmon (Shellejd.github.io)</p>
+    </section>
+
+    <section id="cookieCounter">
+      <p>Donut Counter: <span id="donutCount">0</span></p>
+      <img src="dist\donut.jpg" alt="This is a picture of donut" class="sectionImg">
+      <nav><button id="addDonutBtn">Add a Donut</button></nav>
+    </section>
+
+    <div>
+      <p>Auto Clicker Cost: <span id="autoClickersCost">100</span></p>
+      <p>Auto Clickers: <span id="autoClickers">0</span></p>
+      <p>
+        <nav><button id="addAutoClickerBtn">Auto Clickers</button></nav>
+      </p>
+    </div>
+
+    <div>
+      <p>Multiplier Cost: <span id="multiplierCost">10</span></p>
+      <p> Multipliers: <span id="multiplier">0</span></p>
+      <nav><button id="addMultiplierBtn">Donut Multiplier </button></nav>
+    </div>
+
+    <script src="./index.js"></script>
 
 
-  <div class="container">
-    <main>
-      <section>
-        <p>Donut Counter: <span id="donutCount">0</span></p>
-        <img src="dist\donut.jpg" alt="This is a picture of donut" class="sectionImg">
-        <nav><button id="addDonutBtn">Add a Donut</button></nav>
-      </section>
 
-      <div>
-        <p>Auto Clicker Cost: <span id="autoClickersCost">100</span></p>
-        <p>Auto Clickers: <span id="autoClickers">0</span></p>
-        <p>
-          <nav><button id="addAutoClickerBtn">Auto Clickers</button></nav>
-        </p>
-      </div>
 
-      <div>
-        <p>Multiplier Cost: <span id="multiplierCost">10</span></p>
-        <p> Multipliers: <span id="multiplier">0</span></p>
-        <nav><button id="addMultiplierBtn">Donut Multiplier </button></nav>
-      </div>
 
-      <script src="./index.js"></script>
-    </main>
-  </div>
+
+  </main>
 </body>
 
 </html>

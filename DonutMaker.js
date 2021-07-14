@@ -8,7 +8,7 @@ export default class DonutMaker {
     }
 
     addDonut() {
-        this.numDounts += Math.round(1.2, this.numMultuipliers);
+        this.numDonuts += Math.pow(1.2, this.numMultipliers);
     }
 
 
@@ -24,8 +24,8 @@ export default class DonutMaker {
     }
 
     addMultiplier() {
-        if (this.numDonuts = this.multiplierCost) {
-            this.numMultuipliers++;
+        if (this.numDonuts >= this.multiplierCost) {
+            this.numMultipliers++;
             this.numDonuts -= this.multiplierCost;
             this.multiplierCost = Math.round(this.multiplierCost * 1.1);
         }
