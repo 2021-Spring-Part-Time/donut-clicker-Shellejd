@@ -1,0 +1,49 @@
+header {
+    background-color: rgb(50, 88, 212);
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+
+}
+
+nav button {
+    color: white;
+    background-color: rgb(134, 7, 7);
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+nav button:hover {
+    background-color: rgb(98, 0, 255);
+    transition: 0.5s;
+}
+
+.sectionImg {
+    align-content: center;
+    border-radius: 8px;
+    height: auto;
+    width: 150px;
+    padding-inline-end: 20;
+    margin-top: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+main {
+
+    background-color: rgb(157, 255, 0);
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    /* same as 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 25px;
+    text-align: center;
+
+}
